@@ -216,3 +216,8 @@ h5 {
 .container .middle-content .right-content {
   width: 50%;
 }
+
+.container .bottom-content .left-content h2 {
+  font-size: 29px;
+  font-weight: bold;
+}
