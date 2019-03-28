@@ -217,6 +217,11 @@ h5 {
   width: 50%;
 }
 
+.container .middle-content .right-content h2 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
 .container .bottom-content .left-content h2 {
   font-size: 29px;
   font-weight: bold;
