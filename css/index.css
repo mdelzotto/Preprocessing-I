@@ -147,7 +147,7 @@ h5 {
 /* Variables & Maxins */
 /* My code starts here */
 .container {
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
@@ -183,7 +183,7 @@ h5 {
   line-height: 24.5px;
 }
 .container .top-content .sub-text {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
   margin-top: 17px;
   font-size: 19px;
   padding-bottom: 25px;
@@ -217,7 +217,19 @@ h5 {
   width: 50%;
 }
 
+.container .middle-content .right-content h2 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.container .middle-content .right-content {
+  border: 1px solid lightgrey;
+}
+
 .container .bottom-content .left-content h2 {
   font-size: 29px;
   font-weight: bold;
+}
+.container .bottom-content {
+  border-bottom: 1px solid black;
 }
