@@ -183,7 +183,7 @@ h5 {
   line-height: 24.5px;
 }
 .container .top-content .sub-text {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid black;
   margin-top: 17px;
   font-size: 19px;
   padding-bottom: 25px;
@@ -225,4 +225,11 @@ h5 {
 .container .bottom-content .left-content h2 {
   font-size: 29px;
   font-weight: bold;
+}
+
+.container .bottom-content .sub-text {
+  border-bottom: 1px solid red;
+  margin-top: 17px;
+  font-size: 19px;
+  padding-bottom: 25px;
 }
