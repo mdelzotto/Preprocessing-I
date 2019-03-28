@@ -89,7 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}*/
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -101,146 +101,118 @@ header,
 hgroup,
 menu,
 nav,
-
-
-
-html {
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-  font-size: 1.5rem;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
-
-img {
- width: 100%;
- height: auto;
-}
-
-p {
-  line-height: 1.25;
-  margin: 20px 0;
-  font-size: 1.8rem;
-}
-
+/* Variables & Maxins */
+/* My code starts here */
 .container {
-  max-width: 600px;
+  border: 1px solid black;
+  max-width: 880px;
+  width: 100%;
   margin: 0 auto;
-  font-size: 1.6rem;
 }
-
-strong {
+.container header nav {
+  display: flex;
+  margin-top: 32px;
+  justify-content: flex-end;
+  margin-right: -6px;
+}
+.container header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 17px;
+}
+.container .top-content {
+  background: #E4EDF1;
+  margin: 33px 8px 33px 0;
+  padding: 61px 34px;
+}
+.container .top-content .self-picture {
+  width: 37.5%;
+}
+.container .top-content h1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 54px;
+  margin: 5px 0;
+}
+.container .top-content p {
+  margin: 25px 0 20px 0;
+  font-size: 17px;
+  line-height: 24.5px;
+}
+.container .top-content .sub-text {
+  border-bottom: 1px solid grey;
+  margin-top: 17px;
+  font-size: 19px;
+  padding-bottom: 25px;
+}
+.container .top-content button {
+  background: darkgrey;
+  padding: 10px 11px;
+  font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: white;
+  border-radius: 8%;
+  margin: -4px 0 0 -2px;
 }
-
-header {
-  border-bottom: 1px solid black;
-  margin: 20px 0;
-  padding: 20px 0;
+.container .middle-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 56px;
 }
-
-@media( max-width: 515px ) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+.container .middle-content .left-content {
+  width: 50%;
+  padding-right: 30px;
 }
-
-header h1 {
-  font-size: 4rem;
+.container .middle-content .left-content h2 {
+  font-size: 29px;
+  font-weight: bold;
 }
-
-@media( max-width: 515px ) {
-  header h1 {
-    margin-bottom: 20px;
-  }
+.container .middle-content .left-content p {
+  margin-top: 19px;
 }
-
-header nav {
-  margin-left: 62px;
-}
-
-@media( max-width: 515px ) {
-  header nav {
-    margin-left: 0;
-  }
-}
-
-header nav a {
-  margin-left: 20px;
-  font-size: 1.8rem;
-}
-
-header nav .first-anchor {
-  margin-left: 0;
-}
-
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media( max-width: 515px ) {
-  .main-content {
-    flex-direction: column;
-  }
-}
-
-.main-content section {
-  margin: 20px 2.5%;
-  width: 45%;
-}
-
-@media( max-width: 515px ) {
-  .main-content section {
-    width: 90%;
-  }
-}
-
-.main-footer {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  border-top: 1px dashed black;
-  padding-top: 20px;
-}
-
-.main-footer nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.book-flight-btn {
- display: block;
- background-color: #FFBF27;
- margin: 0 10px 20px;
- cursor: pointer;
- width: 200px;
- height: 45px;
- font-size: 2rem;
- border-radius: 10px;
-}
-
-@media( max-width: 515px ) {
-  .book-flight-btn {
-    width: 90%;
-    height: 50px;
-    font-size: 2.5rem;
-  }
-}
-
-@media( max-width: 400px ) {
-  .book-flight-btn {
-    background: green;
-    color: white;
-  }
+.container .middle-content .right-content {
+  width: 50%;
 }
