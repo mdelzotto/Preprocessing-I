@@ -226,10 +226,3 @@ h5 {
   font-size: 29px;
   font-weight: bold;
 }
-
-.container .bottom-content .sub-text {
-  border-bottom: 1px solid red;
-  margin-top: 17px;
-  font-size: 19px;
-  padding-bottom: 25px;
-}
